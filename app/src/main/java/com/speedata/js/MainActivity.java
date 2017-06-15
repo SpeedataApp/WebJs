@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
         dev = R6Manager.getMifareInstance(MIFARE); //选择卡类型：Mifare1
         if (dev.InitDev() != 0) {
             Toast.makeText(this, "初始化失败", Toast.LENGTH_SHORT).show();
-            return;
         }
     }
 
